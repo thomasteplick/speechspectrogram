@@ -1,3 +1,4 @@
+<h4>Speech Spectrograms using Short Time Fourier Transforms</h4>
 <p>
 This is a web application written in Go that make use of the html/template package to dynamically create the web page.
 Start the web server at bin\speechspectrogram.exe and connect to it from your web browser at http://127.0.0.1:8080/speechspectrogram.
@@ -13,7 +14,8 @@ The FFT size is 256.  The sampling rate is 8,000 Hz which produces a Nyquist cri
 The checkbox <i>Words Only</i> can be checked to eliminate the spectral noise for the intervals when no
 audio is present.  This occurs at the beginning and end of the audio and in-between words.  The <i>Word Window</i>
 select dropdown determines the sample window to separate the beginning and ending of the words in the audio.
-This is used to eliminate the noise that is present in the spectrogram.
+This is used to eliminate the noise that is present in the spectrogram.  The window types used to reduce
+the spectral leakage from the high sidelobes of the rectangular window are Hamming, Welch, Hanning and Bartlett.
 </p>
 
 <h4>Time domain plot of <i>I read the book yesterday</i></h4>
