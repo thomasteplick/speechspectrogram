@@ -1,4 +1,4 @@
-<h4>Speech Spectrograms using Short Time Fourier Transforms</h4>
+<h3>Speech Spectrograms using Short Time Fourier Transforms</h3>
 <p>
 This is a web application written in Go that make use of the html/template package to dynamically create the web page.
 Start the web server at bin\speechspectrogram.exe and connect to it from your web browser at http://127.0.0.1:8080/speechspectrogram.
@@ -7,8 +7,8 @@ content of the audio.  The spectral power at a particular frequency and time is 
 greatest power and white having the least.  Short-time Fourier transforms (STFT) are used in 32 ms time intervals with 50% overlap
 between FFTs.  The sections are multiplied with various window types to minimize spectral leakage due to the Gibbs phenomenon.
 Time domain plots of the audio waveform can be displayed as well as the spectrogram.  The user can enter audio of not more than
-two seconds as well as some previously created WAV file.
-</p>
+two seconds as well as some previously created WAV file.  Upon selecting <i>play</i> radio button, the user will hear the contents
+of the audio WAV file.  This program requires the fmedia program to be in the PATH environmental variable.
 <p>
 The FFT size is 256.  The sampling rate is 8,000 Hz which produces a Nyquist critical frequency of 4,000 Hz.
 The checkbox <i>Words Only</i> can be checked to eliminate the spectral noise for the intervals when no
